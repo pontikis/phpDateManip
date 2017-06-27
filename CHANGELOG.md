@@ -10,6 +10,12 @@ Project page https://github.com/pontikis/phpDateManip
 License MIT https://raw.github.com/pontikis/phpDateManip/master/MIT_LICENSE
 
 
+Release 0.3.0 (XX XXX 2017)
+-------------------------
+
+* i18n / messages #5
+
+
 Release 0.2.0 (27 Jun 2017)
 -------------------------
 

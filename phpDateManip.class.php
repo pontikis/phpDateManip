@@ -9,7 +9,7 @@
  * @author     Christos Pontikis http://pontikis.net
  * @copyright  Christos Pontikis
  * @license    MIT http://opensource.org/licenses/MIT
- * @version    0.2.0 (27 Jun 2017)
+ * @version    0.3.0 (XX XXX 2017)
  *
  */
 class phpDateManip {
@@ -20,6 +20,7 @@ class phpDateManip {
 	private $datetime_range_end;
 	private $datetime_string_range_start;
 	private $datetime_string_range_end;
+	private $strings;
 	private $last_error;
 
 
@@ -36,6 +37,12 @@ class phpDateManip {
 		$this->datetime_range_end = null;
 		$this->datetime_string_range_start = null;
 		$this->datetime_string_range_end = null;
+
+		$this->strings = array(
+			'invalid_date_range' => 'Invalid date range',
+			'invalid_timezone' => 'Invalid timezone'
+		);
+
 		$this->last_error = null;
 
 	}
@@ -61,6 +68,15 @@ class phpDateManip {
 		return $this->datetime_string_range_end;
 	}
 
+	// setters -----------------------------------------------------------------
+
+	/**
+	 * @param array $strings
+	 */
+	public function setStrings($strings) {
+		$this->strings = $strings;
+	}
+
 	// methods -----------------------------------------------------------------
 
 	/**
@@ -73,12 +89,12 @@ class phpDateManip {
 	public function createDateRange($str_date_range, $str_timezone, $str_dateformat_not_intl, array $a_intl_settings = array()) {
 
 		if(!in_array($str_date_range, $this->a_valid_date_ranges)) {
-			$this->last_error = 'Invalid date range';
+			$this->last_error = $this->strings['invalid_date_range'];
 			return false;
 		}
 
 		if(!$this->isValidTimezone($str_timezone)) {
-			$this->last_error = 'Invalid timezone';
+			$this->last_error = $this->strings['invalid_timezone'];
 			return false;
 		}
 
