@@ -19,7 +19,11 @@ License MIT https://raw.github.com/pontikis/phpDateManip/master/MIT_LICENSE
     * current_week_from_monday
     * current_week_from_sunday
     * current_day
-
+4. Modifies (increase or decrease) a datetime string
+5. Utility functions:
+    * isValidTimezone()
+    * isValidDateTimeString()
+6. Multilanguage
 
 ## Dependencies
 
