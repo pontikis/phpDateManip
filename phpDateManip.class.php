@@ -326,7 +326,7 @@ class phpDateManip {
 	 * @param $str
 	 * @return bool
 	 */
-	function _is_positive_integer($str) {
+	private function _is_positive_integer($str) {
 		return (is_numeric($str) && $str > 0 && $str == round($str));
 	}
 
