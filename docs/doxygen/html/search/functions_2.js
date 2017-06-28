@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['format_5fdatetime',['format_datetime',['../classphp_date_manip.html#ae0bdf57fef1b8ae8d410ac7f3e2076da',1,'phpDateManip']]]
+  ['formatdatetime',['formatDateTime',['../classphp_date_manip.html#abe7c41f344b66323b8f755ec5ef7646a',1,'phpDateManip']]]
 ];

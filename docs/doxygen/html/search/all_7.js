@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
+  ['phpdatemanip',['phpDateManip',['../index.html',1,'']]],
+  ['phpdatemanip',['phpDateManip',['../classphp_date_manip.html',1,'']]],
+  ['phpdatemanip_2eclass_2ephp',['phpDateManip.class.php',['../php_date_manip_8class_8php.html',1,'']]]
 ];

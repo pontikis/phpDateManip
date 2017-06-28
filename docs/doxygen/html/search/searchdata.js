@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "$_cfgipr",
+  0: "$_cfgimprs",
   1: "p",
   2: "cpr",
-  3: "_cfgi",
+  3: "_cfgims",
   4: "$",
   5: "cp"
 };
