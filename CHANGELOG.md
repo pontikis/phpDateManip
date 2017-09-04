@@ -10,9 +10,10 @@ Project page https://github.com/pontikis/phpDateManip
 License MIT https://raw.github.com/pontikis/phpDateManip/master/MIT_LICENSE
 
 
-Release 0.3.0 (XX XXX 2017)
+Upcoming Release 0.3.0 (XX XXX 2017)
 -------------------------
 
+* _is_positive_integer to not accept scientific notation (E) #6
 * date string modify #4
 * i18n / messages #5
 

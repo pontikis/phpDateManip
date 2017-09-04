@@ -209,7 +209,7 @@ class phpDateManip {
 			return false;
 		}
 
-		if(!$this->_is_positive_integer($int_quantity)) {
+		if(!$this->_is_positive_integer($int_quantity, 3)) {
 			$this->last_error = $this->strings['invalid_date_modification_quantity'];
 			return false;
 		}
@@ -324,10 +324,23 @@ class phpDateManip {
 	 * Check if expression is positive integer
 	 *
 	 * @param $str
+	 * @param $length
 	 * @return bool
 	 */
-	private function _is_positive_integer($str) {
-		return (is_numeric($str) && $str > 0 && $str == round($str));
+	private function _is_positive_integer($str, $length) {
+		// allow only digits
+		if(preg_match("/[^\pN]/u", $str)) {
+			return false;
+		}
+		// allow only positive values
+		if($str == 0) {
+			return false;
+		}
+		// check integer length
+		if(strlen($str) > $length) {
+			return false;
+		}
+		return true;
 	}
 
 }
